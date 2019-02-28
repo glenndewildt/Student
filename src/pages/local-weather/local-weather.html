@@ -1,0 +1,22 @@
+<!-- -->
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            Collegekaart
+        </ion-title>
+        <ion-buttons end>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="animated fadeIn common-bg">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <img src="../assets/img/ColPaspng.png">
+
+</ion-content>
